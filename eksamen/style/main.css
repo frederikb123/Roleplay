@@ -1,0 +1,298 @@
+/* ---------- root variables ---------- */
+:root {
+  --green: rgb(38, 76, 89);
+  --light-green: rgb(172, 198, 201);
+  --light-grey: #f1f1f4;
+  --text-color-light: #f1f1f1;
+  --text-color-dark: #333;
+}
+
+/* ---------- general styling ---------- */
+html {
+  color: var(--text-color-dark);
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+/* ---------- Grid container ---------- */
+.grid-container {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+
+
+/* ---------- topbar styling ---------- */
+.topbar {
+  background-color: #414141;
+  color: var(--text-color-light);
+  padding: 13.5px;
+  text-transform: uppercase;
+}
+
+.topbar h2 {
+  margin: 0;
+  font-weight: 300;
+}
+
+/* ---------- footer styling ---------- */
+.footer {
+  background-color: #414141;
+  color: var(--text-color-light);
+}
+
+
+/* ---------- header styling ---------- */
+header {
+  background-color: var(--green);
+}
+
+.img-col {}
+
+.img-col img {
+  max-width: 200px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.grid-container section {
+  position: relative;
+}
+
+/* ---------- Iframe ---------- */
+iframe {
+  width:320px;
+  height:275px;
+
+}
+
+
+
+/* ---------- tabbar styling ---------- */
+.tabbar {
+  background-color: #B47E83;
+  margin: auto;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.tabbar a {
+  display: inline-block;
+  color: var(--text-color-light);
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 0.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Change the color of links on hover */
+.tabbar a:hover {
+  background-color: var(--light-grey);
+  color: var(--text-color-dark);
+}
+
+/* Add a color to the active/current link */
+.tabbar a.active {
+  background-color: var(--light-white);
+  color: var(--text-color-light);
+}
+
+/* ---------- PAGE STYLING ---------- */
+.page {
+  display: none;
+  background: var(--light-grey);
+  animation: fadeIn 0.4s;
+}
+
+/* image-slider size */
+  #carouselExampleIndicators {
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+.main {
+  padding-top:100px;
+  padding-bottom:100px;
+}
+
+.logo {
+  width:300px;
+  height:300px;
+}
+
+h5 {
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+p {
+  margin-left:5px;
+  margin-right:5px;
+}
+
+/* spacing */
+.introduction {
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.breakpoint {
+  padding-bottom:30px;
+}
+
+
+/* ---------- logo styling ---------- */
+
+/* ---------- animations ---------- */
+/* fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* Media queries TABLET */
+
+@media only screen and (min-width: 700px){
+  body {
+
+  }
+
+  /* ---------- Page styling TABLET ---------- */
+  h5, p, .tabbar a, h2, h1 header.topbar h2 {
+    font-size:1.5em;
+  }
+
+  .logo {
+    width:500px;
+    height:500px;
+  }
+
+  .main {
+    padding-top:200px;
+    padding-bottom:200px;
+  }
+
+  .img-thumbnail {
+    width:500px;
+    height:500px;
+  }
+
+  .tabbar a {
+    font-size: 1.5em;
+  }
+
+  p {
+    margin-left:200px;
+    margin-right:200px;
+  }
+
+/* image-slider size */
+  #carouselExampleIndicators {
+    margin-left:150px;
+    margin-right:150px;
+  }
+
+  /* Kalender size */
+  iframe {
+    width:675px;
+    height:475px;
+  }
+
+  /* spacing */
+  .introduction {
+    padding-top:90px;
+    padding-bottom:90px;
+  }
+
+
+  @media only screen and (min-width: 1050px){
+
+
+    /* ---------- Page styling DESKTOP ---------- */
+    h5, p, .tabbar a, h2, h1 header.topbar h2 {
+      font-size:2em;
+    }
+
+
+    .main {
+      padding-top:300px;
+      padding-bottom:300px;
+    }
+
+    iframe {
+      width:875px;
+      height:475px;
+    }
+
+    a {
+      font-size:2em;
+    }
+
+
+
+
+  /* image-slider size DESKTOP */
+    #carouselExampleIndicators {
+      margin-left:200px;
+      margin-right:200px;
+    }
+
+    .img-thumbnail {
+      width:800px;
+      height:800px;
+    }
+
+    /* spacing */
+    .introduction {
+      padding-top:300px;
+      padding-bottom:300px;
+      font-size:2em;
+    }
+
+    p {
+    padding-top:100px;
+    padding-bottom:100px;
+  }
+}
+
+@media only screen and (min-width: 1400px){
+
+  /* spacing */
+  .introduction, p {
+    padding-left:200px;
+    padding-right:200px;
+    font-size:2em;
+  }
+
+  #carouselExampleIndicators {
+    margin-left:200px;
+    margin-right:200px;
+  }
+
+  iframe {
+    width:875px;
+    height:675px;
+  }
+
+}
